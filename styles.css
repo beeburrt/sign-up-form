@@ -7,6 +7,7 @@
 :root {
   --text-color: #002255;
   --accent-color: #eebbee;
+  --background-color: #eee7de;
 }
 
 html {
@@ -14,27 +15,61 @@ html {
 }
 
 body {
-  background-color: #ebca9f;
-}
-
-body,
-.main-wrapper {
+  display: flex;
   width: 100vw;
   height: 100vh;
 }
 
-.img-wrapper {
-  width: 45%;
-  height: 100%;
+.main-wrapper {
+  width: 100%;
+  display: flex;
 }
 
-img {
+.img-wrapper {
+  background-image: url(assets/weed.jpg);
+  background-size: cover;
+  width: 45%;
   height: 100%;
-  /* object-fit: cover; */
-  max-width: 100%;
-  border-right: 4px solid #002255;
+  background-position: bottom left;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+}
+
+.img-wrapper img {
+  position: relative;
+  top: 40%;
+  left: 55%;
+  width: 45%;
+  /* margin: 0 auto; */
+  border: 2px solid white;
+}
+
+.links {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 0;
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.links a {
+  color: var(--accent-color);
 }
 
 .form-wrapper {
-  width: 70%;
+  width: 65%;
+  border: 2px solid hotpink;
+  height: 100%;
+  background-color: var(--background-color);
 }
+
+.form-wrapper h1 {
+  font-size: 28px;
+  text-align: end;
+  padding: 3rem;
+}
+
+/* @media(); */
