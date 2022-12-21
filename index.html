@@ -4,73 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
     <title>Sign Up!</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="main-wrapper">
       <div class="img-wrapper">
-        <img src="assets/abj.jpg" alt="ABJ logo" />
-        <!-- Attribute links -->
-        <div class="links">
-          Photo by
-          <a
-            href="https://unsplash.com/@mrbrodeur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >
-            Matthew Brodeur
-          </a>
-          on
-          <a
-            href="https://unsplash.com/s/photos/marijuana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >
-            Unsplash
-          </a>
+        <div class="logo-wrapper">
+          <img src="assets/knife-logo.jpg" alt="knife logo" />
         </div>
+        <!-- Attribute links -->
+        <div class="links"></div>
       </div>
-
-      <div class="form-wrapper">
+      <div class="text-wrapper">
         <h1>Sign Up</h1>
+        <p>
+          This is not real! Entering your data and clicking the button won't do
+          anything. But you can still do it if you want!
+        </p>
+      </div>
+      <div class="form-wrapper">
         <form>
           <label for="first-name">
-            <span class="input-label">First Name *</span>
+            <p class="input-label">First Name *</p>
             <input type="text" id="first-name" required />
           </label>
           <label for="last-name">
-            <span class="input-label">Last Name *</span>
+            <p class="input-label">Last Name *</p>
             <input type="text" id="last-name" required />
           </label>
           <label for="email">
-            <span class="input-label">Email</span>
+            <p class="input-label">Email</p>
             <input type="email" id="email" required />
           </label>
           <label for="phone">
-            <span class="input-label">Phone (optional)</span>
+            <p class="input-label">Phone (optional)</p>
             <input type="tel" id="phone" />
           </label>
           <label for="passwd">
-            <span class="input-label">Password *</span>
+            <p class="input-label">Password *</p>
             <input type="password" id="passwd" required />
           </label>
           <label for="passwd2">
-            <span class="input-label">Confirm Password *</span>
+            <p class="input-label">Confirm Password *</p>
             <input type="password" id="passwd2" required />
           </label>
           <button type="button">Sign Up</button>
