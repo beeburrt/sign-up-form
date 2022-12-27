@@ -44,17 +44,25 @@ body {
   gap: 5px;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
+  bottom: -535px;
+  margin: 0 auto;
 }
 
 .links-container a {
   color: var(--accent-color1);
 }
 
+.text-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .text-container h1 {
   padding: 15px;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1rem;
 }
 
 .form-container {
@@ -63,8 +71,10 @@ body {
 }
 
 .text-container {
-  line-height: 30px;
+  line-height: 35px;
   padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .form-container form {
@@ -73,7 +83,6 @@ body {
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  border: 2px solid black;
 }
 
 .form-container input {
@@ -103,16 +112,22 @@ body {
   .main-container {
     flex-direction: column;
     width: 100%;
-    height: 100%;
   }
 
   .img-container {
-    width: 100%;
+    background-image: url(assets/weed.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
   }
 
   .img-container img {
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .links-container {
+    top: 0;
   }
 
   .links-container a {
@@ -126,14 +141,14 @@ body {
   }
 
   .text-container {
-    width: 100%;
-    border: 2px solid black;
+    margin-bottom: 0;
+    line-height: 35px;
   }
 
   .text-container p {
     padding: 15px;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .form-container form {
