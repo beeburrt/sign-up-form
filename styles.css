@@ -13,44 +13,23 @@
 
 body {
   width: 100vw;
-  height: 100vh;
   background-color: var(--background-color);
   font-size: 1.5rem;
 }
 
 .main-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
 }
 
 .img-container {
   background-image: url(assets/weed.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center;
   width: 45%;
-  height: 100%;
-}
-
-.links-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 300px;
-  color: var(--accent-color1);
-  text-align: center;
-  padding: 5px;
-  font-size: 13px;
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-  bottom: -535px;
-  margin: 0 auto;
-}
-
-.links-container a {
-  color: var(--accent-color1);
+  /* height: 100%; */
 }
 
 .text-container {
@@ -77,6 +56,12 @@ body {
   margin: 0 auto;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-container form {
   display: flex;
   flex-direction: column;
@@ -85,6 +70,16 @@ body {
   width: 100%;
 }
 
+/* .label {
+  position: relative;
+  height: 55px;
+}
+
+.input-label {
+  position: relative;
+  top: 20px;
+} */
+
 .form-container input {
   padding: 5px 10px;
   width: 16em;
@@ -92,6 +87,16 @@ body {
   border: none;
   border-bottom: 2px solid var(--text-color);
   background-color: var(--background-color);
+  outline: none;
+}
+
+.form-container input:hover,
+.form-container input:active,
+.form-container input:visited,
+.form-container input:enabled,
+.form-container input:valid,
+.form-container input:invalid {
+  outline: none;
 }
 
 .btn-container button {
@@ -102,7 +107,13 @@ body {
   width: 16em;
 }
 
-@media (width < 700px) {
+.btn:hover,
+.btn:active {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+@media (width < 768px) {
   body {
     width: 100vw;
     overflow-x: hidden;
@@ -111,7 +122,6 @@ body {
 
   .main-container {
     flex-direction: column;
-    width: 100%;
   }
 
   .img-container {
@@ -120,6 +130,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
+    width: 100%;
   }
 
   .img-container img {
