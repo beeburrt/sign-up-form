@@ -25,29 +25,41 @@
         <form>
           <label for="first-name" class="label">
             <p class="input-label">First Name *</p>
-            <input type="text" id="first-name" required autofocus />
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              autofocus
+            />
           </label>
           <label for="last-name" class="label">
             <p class="input-label">Last Name *</p>
-            <input type="text" id="last-name" required />
+            <input type="text" id="last-name" name="last-name" required />
           </label>
           <label for="email" class="label">
             <p class="input-label">Email *</p>
-            <input type="email" id="email" required />
+            <input type="email" id="email" name="email" required />
           </label>
           <label for="phone" class="label">
             <p class="input-label">Phone (optional)</p>
-            <input type="tel" id="phone" />
+            <input type="tel" id="phone" name="phone" />
           </label>
           <label for="passwd" class="label">
             <p class="input-label">Password *</p>
-            <input type="password" id="passwd" required />
+            <input type="password" id="passwd" name="password" required />
           </label>
           <label for="passwd2" class="label">
             <p class="input-label">Confirm Password *</p>
-            <input type="password" id="passwd2" required />
+            <input
+              type="password"
+              id="passwd2"
+              name="confirm-password"
+              required
+            />
           </label>
           <div class="btn-container">
+            <!-- this should be type submit but, you know... fake -->
             <button class="btn" type="button">Sign Up!</button>
           </div>
         </form>
